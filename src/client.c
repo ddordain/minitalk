@@ -6,7 +6,7 @@
 /*   By: ddordain <ddordain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/21 14:07:14 by ddordain          #+#    #+#             */
-/*   Updated: 2022/01/21 17:11:11 by ddordain         ###   ########.fr       */
+/*   Updated: 2022/01/21 17:30:08 by ddordain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static void	termination(int signum)
 
 static	void char_to_binary(pid_t pid, char c)
 {
-	int	bit;
+	char	bit;
 
 	bit = 8;
 	while (bit--)
