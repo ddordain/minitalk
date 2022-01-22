@@ -19,6 +19,8 @@ static void	handler(int signum, siginfo_t *info, void *unused)
 
 	(void)unused;
 	bit += 1;
+	if (bit == 1)
+		c = '\0';
 	c |= signum == SIGUSR2;
 	if (bit < 8)
 		c <<= 1;
