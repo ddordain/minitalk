@@ -6,7 +6,7 @@
 #    By: ddordain <ddordain@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/21 13:55:42 by ddordain          #+#    #+#              #
-#    Updated: 2022/01/21 17:13:50 by ddordain         ###   ########.fr        #
+#    Updated: 2022/02/23 12:55:34 by ddordain         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,11 +44,11 @@ CYAN = \033[36m
 
 all: $(NAME) $(NAME2)
 
-$(OBJ_DIR)%.o : $(SRCS_DIR)%.c
+$(OBJ_DIR)%.o : $(SRCS_DIR)%.c ./include/minitalk.h
 		@echo Create: $(NAME) Object directory
 		@mkdir -p $(OBJ_DIR)
 		$(CC) -c $(CFLAGS) $(DEBUGGING) $(LFLAGS) $< -o $@
-$(OBJ_DIR2)%.o : $(SRCS_DIR)%.c
+$(OBJ_DIR2)%.o : $(SRCS_DIR)%.c ./include/minitalk.h
 		@echo Create: $(NAME2) Object directory
 		@mkdir -p $(OBJ_DIR2)
 		$(CC) -c $(CFLAGS) $(DEBUGGING) $(LFLAGS) $< -o $@
