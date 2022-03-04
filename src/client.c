@@ -6,7 +6,7 @@
 /*   By: ddordain <ddordain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/21 14:07:14 by ddordain          #+#    #+#             */
-/*   Updated: 2022/02/23 13:22:47 by ddordain         ###   ########.fr       */
+/*   Updated: 2022/03/04 10:31:41 by ddordain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ static	void	char_to_binary(pid_t pid, char c)
 		else
 			kill(pid, SIGUSR1);
 		pause();
-		usleep(200);
 	}
 }
 

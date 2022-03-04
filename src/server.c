@@ -6,11 +6,11 @@
 /*   By: ddordain <ddordain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/21 13:03:33 by ddordain          #+#    #+#             */
-/*   Updated: 2022/02/23 13:20:31 by ddordain         ###   ########.fr       */
+/*   Updated: 2022/03/04 10:38:06 by ddordain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "minitalk.h"
+#include "minitalk.h"
 
 static void	handler(int signum, siginfo_t *info, void *unused)
 {
