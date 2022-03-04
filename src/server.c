@@ -6,7 +6,7 @@
 /*   By: ddordain <ddordain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/21 13:03:33 by ddordain          #+#    #+#             */
-/*   Updated: 2022/03/04 10:38:06 by ddordain         ###   ########.fr       */
+/*   Updated: 2022/03/04 11:11:37 by ddordain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ static void	handler(int signum, siginfo_t *info, void *unused)
 	{
 		write(1, &c, 1);
 		bit = 0;
-		c = 0;
 	}
 	usleep(200);
 	kill(info->si_pid, SIGUSR2);
